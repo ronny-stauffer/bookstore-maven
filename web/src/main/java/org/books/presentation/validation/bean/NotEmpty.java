@@ -1,4 +1,4 @@
-package org.books.common.data.validation;
+package org.books.presentation.validation.bean;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -9,12 +9,11 @@ import javax.validation.Constraint;
 import javax.validation.Payload;
 import javax.validation.ReportAsSingleViolation;
 
-
-@Constraint(validatedBy=EmptyValidator.class)
-@ReportAsSingleViolation
 @Documented
 @Target({ElementType.ANNOTATION_TYPE, ElementType.METHOD, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
+@Constraint(validatedBy=EmptyValidator.class)
+@ReportAsSingleViolation
 public @interface NotEmpty {
 
     public String message() default "{org.books.Bookstore.EMPTY_STRING}";

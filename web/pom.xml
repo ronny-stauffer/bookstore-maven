@@ -16,6 +16,15 @@
 
 	<name>Bookstore WEB</name>
 
+	<repositories>
+		<repository>
+			<id>primefaces</id>  
+			<name>PrimeFaces</name>
+			<url>http://repository.primefaces.org</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
@@ -30,6 +39,12 @@
 			<artifactId>javaee-api</artifactId>
 			<version>6.0</version>
 			<scope>provided</scope>
+		</dependency>
+
+		<dependency>  
+			<groupId>org.primefaces</groupId>  
+			<artifactId>primefaces</artifactId>  
+			<version>3.4.2</version>  
 		</dependency>
 
 		<dependency>

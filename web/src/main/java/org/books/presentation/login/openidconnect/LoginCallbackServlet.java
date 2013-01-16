@@ -216,7 +216,7 @@ public class LoginCallbackServlet extends HttpServlet {
         
         JSONObject idTokenJSONObject2 = new JSONObject();
         idTokenJSONObject2.put("iss", idTokenJSONObject.get("iss"));
-        idTokenJSONObject2.put("user_id", idTokenJSONObject.get("user_id"));
+        idTokenJSONObject2.put("user_id", idTokenJSONObject.get("user_id") != null ? idTokenJSONObject.get("user_id") : "dummy");
         idTokenJSONObject2.put("aud", idTokenJSONObject.get("aud"));
         idTokenJSONObject2.put("iat", idTokenJSONObject.get("iat"));
         idTokenJSONObject2.put("exp", idTokenJSONObject.get("exp")); // Not allowd by original NimbusDS OpenID Connect SDK altough required by OpenID Connect Specification

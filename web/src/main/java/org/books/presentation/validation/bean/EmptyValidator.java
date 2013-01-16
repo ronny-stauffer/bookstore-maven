@@ -1,4 +1,4 @@
-package org.books.common.data.validation;
+package org.books.presentation.validation.bean;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

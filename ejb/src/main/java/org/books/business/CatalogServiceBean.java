@@ -1,6 +1,7 @@
 package org.books.business;
 
 import java.util.List;
+
 import javax.annotation.Resource;
 import javax.ejb.EJBException;
 import javax.ejb.Stateless;
@@ -10,6 +11,7 @@ import javax.persistence.PersistenceContextType;
 import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.Predicate;
+
 import org.books.business.catalog.Catalog;
 import org.books.business.catalog.LocalCatalogImpl;
 import org.books.common.data.Book;
